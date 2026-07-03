@@ -9,8 +9,8 @@
   --tx: #0f1117;
   --tx2: #393c45;
   --tx3: #797d87;
-  --ac: #0d7377;
-  --ac-light: rgba(13, 115, 119, 0.10);
+  --ac: #2563eb;
+  --ac-light: rgba(37, 99, 235, 0.10);
   --card-bg: rgba(255, 255, 255, 0.32);
   --card-highlight: rgba(255, 255, 255, 0.58);
   --card-shadow: rgba(0, 0, 0, 0.05);
@@ -42,8 +42,8 @@ html.dark {
   --tx: #e8e8ee;
   --tx2: #a8a8b2;
   --tx3: #64646e;
-  --ac: #2dd4bf;
-  --ac-light: rgba(45, 212, 191, 0.14);
+  --ac: #60a5fa;
+  --ac-light: rgba(96, 165, 250, 0.14);
   --card-bg: rgba(255, 255, 255, 0.04);
   --card-highlight: rgba(255, 255, 255, 0.07);
   --card-shadow: rgba(0, 0, 0, 0.50);
@@ -173,37 +173,7 @@ html.dark .icon-moon { opacity: 0; transform: rotate(90deg) scale(.6); }
 .sidebar-link.active {
   color: var(--tx);
   background: var(--ac-light);
-}
-
-.sidebar-link.active::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 50%;
-  transform: translateY(-50%);
-  width: 3px; height: 18px;
   border-radius: 3px;
-  background: var(--ac);
-}
-
-/* ── 侧边栏底部状态 ── */
-.sidebar-footer {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: var(--fs-xs);
-  color: var(--tx3);
-}
-
-.status-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--tx3);
-  flex-shrink: 0;
-}
-
-.status-dot.ok {
-  background: #16a34a;
-  box-shadow: 0 0 6px rgba(22, 163, 74, 0.5);
 }
 
 /* ═══════════════════════════════════════════════════
